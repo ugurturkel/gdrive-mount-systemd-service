@@ -1,0 +1,7 @@
+1. add repository "sudo add-apt-repository ppa:alessandro-strada/ppa"
+2. install the package named google-drive-ocamlfuse "sudo apt update && sudo apt install google-drive-ocamlfuse" 
+3. run this app for first time to give authorization "google-drive-ocamlfuse"
+4. make a directory on your home folder as gdrive
+5. put the service in /etc/systemd/system
+6. start the service with "systemctl start gdrive.service"
+7. make it persist after reboot "systemctl enable gdrive.service"
