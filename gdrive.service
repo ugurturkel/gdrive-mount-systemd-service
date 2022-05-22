@@ -1,0 +1,14 @@
+[Unit]
+Description=Google Drive Mounting with google-drive-ocamlfuse
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+User=ugur
+RemainAfterExit=yes
+ExecStart=/usr/bin/google-drive-ocamlfuse /home/test/gdrive
+
+
+[Install]
+WantedBy=multi-user.target
