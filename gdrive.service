@@ -5,7 +5,7 @@ StartLimitIntervalSec=0
 
 [Service]
 Type=oneshot
-User=ugur
+User=test
 RemainAfterExit=yes
 ExecStart=/usr/bin/google-drive-ocamlfuse /home/test/gdrive
 
